@@ -17,3 +17,29 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+// Jobsheet 2 Praktikum 1
+
+// URL : /
+Route::get('/', function () {
+    echo 'Selamat Datang';
+});
+
+// URL : /about
+Route::get('/about', function ($id = 2041720249, $name = 'Vinka Kharisma Adzania', $class = 'TI - 2D') {
+    echo 'NIM : ' . $id . '<br>Nama : ' . $name . '<br>Kelas : ' . $class;
+});
+
+// URL : /articles/{id}
+Route::get('/articles/{id}', function ($id) {
+    echo 'Halaman Artikel dengan ID ' . $id;
+});
+
+// Route parameter
+Route::get('/articles/{id}', function ($id1) {
+    echo 'Ini merupakan halaman artikel dengan id ' . $id1;
+});
+
+Route::get('/articles/{id}', function ($id2) {
+    echo 'Ini merupakan halaman artikel dengan id ' . $id2;
+});
