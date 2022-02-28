@@ -30,16 +30,13 @@ Route::get('/about', function ($id = 2041720249, $name = 'Vinka Kharisma Adzania
     echo 'NIM : ' . $id . '<br>Nama : ' . $name . '<br>Kelas : ' . $class;
 });
 
+
 // URL : /articles/{id}
 Route::get('/articles/{id}', function ($id) {
     echo 'Halaman Artikel dengan ID ' . $id;
 });
 
 // Route parameter
-Route::get('/articles/{id}', function ($id1) {
-    echo 'Ini merupakan halaman artikel dengan id ' . $id1;
-});
-
-Route::get('/articles/{id}', function ($id2) {
-    echo 'Ini merupakan halaman artikel dengan id ' . $id2;
+Route::get('/articles/{id}', function ($id) {
+    echo 'Ini merupakan halaman artikel dengan id ' . $id;
 });
